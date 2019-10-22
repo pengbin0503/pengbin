@@ -1,6 +1,6 @@
 import unittest  # 导入单元测试框架
-from jiekou.util.HTMLTestReportCN import HTMLTestRunner
-from jiekou.util.common import CASEPATH,REPORTPATH,get_data
+from util.HTMLTestReportCN import HTMLTestRunner
+from util.common import CASEPATH,REPORTPATH,get_data
 num=get_data().get_num(10,999)
 # discover()方法，用于加载指定目录下所有以test开头的用例文件中的测试用例
 tests = unittest.defaultTestLoader.discover(CASEPATH)
